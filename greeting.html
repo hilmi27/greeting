@@ -1,0 +1,31 @@
+<!doctype html>
+<meta name="keywords" content="greeting, javascript, kulo.online">
+<meta name="description" content="kulo.online, cara membuat greeting atau salam menggunakan javascript di blogger">
+<meta http-equiv="refresh" content="0; url=http://kulo.online">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+<div class="card bg-warning text-white shadow">
+    <div class="card-body">
+        <marquee behavior="" direction="left">
+            <script>
+                datetoday = new Date();
+                timenow = datetoday.getTime();
+                datetoday.setTime(timenow);
+                jam = datetoday.getHours();
+                if (jam > 19) salam = "Malam";
+                else if (jam > 11) salam = "Siang";
+                else if (jam > 16) salam = "Sore";
+                else salam = "Pagi";
+                var greeting = ("<h1>Selamat " + salam + ". Selamat datang di Kulo.Online</h1>");
+                document.write(greeting);
+            </script>
+        </marquee>
+     
+    </div>
+  </div>
+
+      </!doctype>
+
+      <!-- created by kulo.online -->
